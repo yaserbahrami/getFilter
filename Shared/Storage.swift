@@ -13,7 +13,7 @@ import PhoneNumberKit
 
 class Storage {
     // Database
-    let db = try! Connection(FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.getfilter")!.appendingPathComponent("db.sqlite3").absoluteString)
+    let db = try! Connection(FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.filtering")!.appendingPathComponent("db.sqlite3").absoluteString)
     
     // Tables
     let users = Table("user")
