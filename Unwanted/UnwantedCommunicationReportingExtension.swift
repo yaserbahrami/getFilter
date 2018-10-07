@@ -22,6 +22,7 @@ class UnwantedCommunicationReportingExtension: ILClassificationUIExtensionViewCo
     @IBOutlet var autoBlockView: UIView!
     @IBOutlet weak var countryPicker: CountryPicker!
     var regionCode = ""
+    var isCountryCodeNeed = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,11 @@ class UnwantedCommunicationReportingExtension: ILClassificationUIExtensionViewCo
             junkView.isSelected = true
             notJunkView.isSelected = false
             autoBlockView.isHidden = false
-            countryPicker.isHidden = false
+            if isCountryCodeNeed{
+                countryPicker.isHidden = false
+            }else{
+                countryPicker.isHidden = true
+            }
         } else {
             junkView.isSelected = false
             notJunkView.isSelected = true
@@ -132,6 +137,7 @@ class UnwantedCommunicationReportingExtension: ILClassificationUIExtensionViewCo
     
     func openCountryPicker(){
 //        countryPicker.isHidden = false
+        isCountryCodeNeed = true
         //get corrent country
         let locale = Locale.current
         let code = (locale as NSLocale).object(forKey: NSLocale.Key.countryCode) as! String?
