@@ -10,6 +10,7 @@ pod 'Zephyr', '~> 3.1.2'
 pod 'PhoneNumberKit', '~> 2.1.0'
 pod 'OneSignal', '~> 2.8.5'
 pod 'KeyboardWrapper', '~> 4.0.0'
+pod 'CountryPickerSwift'
 
 target 'Block' do
     # Comment the next line if you're not using Swift and don't want to use dynamic frameworks

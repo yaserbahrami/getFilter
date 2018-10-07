@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
+  - CountryPickerSwift (1.7.4)
   - CryptoSwift (0.10.0)
   - KeyboardWrapper (4.0.0)
   - Moya (11.0.2):
@@ -30,6 +31,7 @@ PODS:
   - Zephyr (3.1.2)
 
 DEPENDENCIES:
+  - CountryPickerSwift
   - CryptoSwift (~> 0.10.0)
   - KeyboardWrapper (~> 4.0.0)
   - Moya (~> 11.0.2)
@@ -42,6 +44,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CountryPickerSwift
     - CryptoSwift
     - KeyboardWrapper
     - Moya
@@ -54,6 +57,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  CountryPickerSwift: 3d66c92f62ee95a617feff9cae611568ae9586c2
   CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
   KeyboardWrapper: 6b475a239d6cf16ca07961eb59255765e1a1c1cf
   Moya: a725035953bc1c0eb1be505ab903984501d82440
@@ -64,6 +68,6 @@ SPEC CHECKSUMS:
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   Zephyr: 7a3c2678c6bb935a13d7215ec9154956e8b4d209
 
-PODFILE CHECKSUM: 461d25f876bdb92fddb419019a5e79631d51f9ee
+PODFILE CHECKSUM: ca0b6665d6d6899ab135ba48c8a16d87612f48f5
 
 COCOAPODS: 1.5.3
