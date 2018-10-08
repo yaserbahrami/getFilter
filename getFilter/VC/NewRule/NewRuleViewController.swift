@@ -224,6 +224,10 @@ class SelectiveView: UIView {
             case "Block":
                 layer.borderColor = #colorLiteral(red: 0.9146965146, green: 0.3095251918, blue: 0.2168177068, alpha: 1).cgColor
                 imageView.tintColor = #colorLiteral(red: 0.9146965146, green: 0.3095251918, blue: 0.2168177068, alpha: 1)
+            case "Junk":
+                layer.borderColor = #colorLiteral(red: 0.9146965146, green: 0.3095251918, blue: 0.2168177068, alpha: 1).cgColor
+            case "Not Junk":
+                layer.borderColor = #colorLiteral(red: 0, green: 0.8157687783, blue: 0.1033710912, alpha: 1).cgColor
             default: break;
             }
         }
