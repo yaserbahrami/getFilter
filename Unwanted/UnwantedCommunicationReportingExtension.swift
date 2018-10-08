@@ -29,6 +29,7 @@ class UnwantedCommunicationReportingExtension: ILClassificationUIExtensionViewCo
         let gf = try! GetFilter(readOnly: false)
         notJunkView.delegate = self
         junkView.delegate = self
+        junkView.didTap()
     }
     
     func selectiveDidTap(selective: SelectiveView) {
@@ -136,7 +137,7 @@ class UnwantedCommunicationReportingExtension: ILClassificationUIExtensionViewCo
     }
     
     func openCountryPicker(){
-//        countryPicker.isHidden = false
+        countryPicker.isHidden = false
         isCountryCodeNeed = true
         //get corrent country
         let locale = Locale.current
